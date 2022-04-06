@@ -37,17 +37,8 @@ function changeColor() {
 }
 
 function rgbOrHex() {
-   
 
-    function colorToHex (color) {
-        let hexadecimal = color.toString(16);
-        return hexadecimal.length == 1 ? "0" + hexadecimal : hexadecimal;
-    }
-
-    function rgbToHex(red, green, blue) {
-        return '#' + colorToHex(red) + colorToHex(green) + colorToHex(blue);
-    }
-    
+    rgbToHex(cRed, cGreen, cBlue)
 
     if (!checkbox.checked) {
         textInjected.innerHTML = `rgb(${cRed}, ${cGreen}, ${cBlue})`
